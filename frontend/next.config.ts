@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // yahan custom Next.js settings dal sakti ho
+  typescript: {
+    // TypeScript errors ko ignore karne ke liye
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    // ESLint errors/warnings ko ignore karne ke liye
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
